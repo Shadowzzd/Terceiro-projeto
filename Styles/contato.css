@@ -1,0 +1,118 @@
+.contato{
+    background-color: var(--cor-branca);
+    text-align: center;
+    align-items: center;
+
+}
+.titulo-contato{
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--cor-azul-especial);
+    padding: 24px 24px 8px 24px;
+}
+.texto-contato{
+    color: var(--cor-azul-especial);
+    font-weight: 300;
+    font-size: 1em;
+    padding: 0 24px 24px 24px;
+}
+.rodape-pesquisa{
+    width: 80%;
+    border-radius: 24px;
+    text-align: center;
+    align-items: center;
+    padding: 0.5em;
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid var(--cor-azul-especial);
+    color: var(--cor-azul-especial);
+}
+.rodape-pesquisa::placeholder{
+    background: url("../Imgs/Email.svg")no-repeat;
+    height: 2em;
+    background-position: 2em;
+    padding-top: 1em;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+}
+.lista-rodape{
+    display: none;
+}
+@media screen and (min-width:1024px){
+    .lista-rodape{
+        display:block;
+    }
+    .contato{
+        display: flex;
+    }
+    .rodape-pesquisa{
+        width: 30%;
+        justify-content: right;
+        align-items: right;
+        margin: 74px 0 74px 8em;
+        
+        
+    }
+    .contato-descricao{
+        width: 30%;
+        margin-left: 149px;
+        text-align: left;
+
+    }
+    .titulo-contato{
+        font-size: 24px;
+        
+    }
+    .frase-rodape{
+        font-size: 24px;
+        margin-top:1.7em;
+    }
+    .lista-rodape-div{
+        display: flex;
+    }
+    .lista-rodape{
+        margin-left: 3.8em;
+        flex: 1;
+        gap: 3.8em;
+        align-items: center;
+    }
+    .lista-rodape-titulo{
+        margin-bottom: 2em;
+        margin-top: 3.4em;
+        color: #858585;
+        font-weight: 400;
+        font-size: 14px;
+
+    }
+    .lista-rodape-item{
+        display: flex;
+        margin: 1em 0;
+        
+        align-items: center;
+        
+        
+    }
+    .lista-rodape-link{
+        text-decoration: none;
+        color: #474646;
+        font-weight: 400;
+        font-size: 14px;
+        margin-left: 8px;
+    }
+}
+@media screen and (min-width:1728px){
+    .contato{
+        padding: 3em 10vw;
+    }
+    .rodape-pesquisa{
+        margin-left: 1em;
+        width: 25%;
+        
+    }
+    .titulo-contato{
+        white-space: nowrap;
+    }
+    
+}

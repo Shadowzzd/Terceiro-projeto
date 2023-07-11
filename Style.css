@@ -1,0 +1,88 @@
+@import url("Styles/Header.css");
+@import url(Styles/Banner.css);
+@import url(Styles/Carrossel.css);
+@import url(Styles/Tópicos.css);
+@import url(Styles/contato.css);
+:root{
+    --cor-de-fundo:#EBECEE;
+    --cor-gradiente:linear-gradient(160deg, #002F52 0%, #326589 100%);
+    --cor-branca:#FFF;
+    --cor-laranja:#EB9B00;
+    --cor-texto-branca:#FFFFFF;
+    --cor-texto-preto:#000000D9;
+    --cor-azul-especial:#002F52;
+    --tamanho-texto16px: 1em;
+    --tamanho-texto18px:1.25em;
+    --tamanho-texto32px:2em;
+    --fonte-principal: 'poppins';
+    --fonte-secundaria: 'Josefin Sans'
+
+
+}
+body{
+    background-color:var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: var(--tamanho-texto16px);
+    font-weight: 400;
+     
+}
+.cabecalho{
+    background-color: var(--cor-branco);
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    padding-bottom: 1.5em;
+    width: 40px;
+    height: 40px;
+}
+.imagem1 img{
+    width: 50px;
+    height: 40px;
+    padding-right: 15px;
+    
+}
+.imagem2 img{
+    width: 38px;
+    height: 38px;
+    padding-right: 24px;
+}
+.imagem3 img {
+    width: 32px;
+    height: 38px;
+  padding-right: 24px;
+}
+
+.container-cabecalho1{
+    margin-right: 6.68em;
+}
+.container-cabecalho2{
+    margin: 1.12em 0 1.12em 0;
+}
+.rodape{
+    background-color: var(--cor-branca);
+    color: var(--cor-texto-preto);
+    padding: 17px 0px 24px 24px;
+    font-weight: 400;
+    font-size: 16px;
+
+}
+.separador{
+    margin:0;
+    background-color: var(--cor-texto-preto);
+    
+    
+}
+@media screen and (min-width:1728px){
+    .lista-rodape{
+        border-left: 1px solid var(--cor-texto-preto);
+        padding: 0em 2em;
+    }
+    
+    .rodape{
+        padding: 3em 3em;
+    }
+    .lista-rodape-titulo{
+        margin-top: 0;
+    }
+}
